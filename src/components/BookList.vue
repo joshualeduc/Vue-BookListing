@@ -11,12 +11,12 @@ import BookItem from './BookItem.vue';
 
 export default {
   name: 'BookList',
+  components: {
+    BookItem
+  },
   data() {
     return {
       title: 'All Books',
-      components: {
-        BookItem
-      },
       books: [
         {title: 'Self-Reliance', author: 'Ralph Waldo Emerson'},
         {title: 'American Gods', author: 'Neil Gaiman'},
